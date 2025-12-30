@@ -1,0 +1,153 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #030a12;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+
+.topDiv {
+    background-color: rgba(0, 0, 0, 0.8); 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    border-bottom: 1px solid rgba(0, 210, 255, 0.3);
+    position: sticky; 
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px); 
+}
+
+.logo-image {
+    height: 50px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header {
+    height: 90vh; 
+    background: 
+        linear-gradient(to bottom, rgba(3, 10, 18, 0) 60%, #030a12 100%), /* The magic fade */
+        url("DESIGN3.png");
+    background-size: cover; 
+    background-position: center 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+
+.header-overlay {
+    background: none; 
+    text-align: center;
+    width: 100%;
+}
+
+.header h1 {
+    
+    font-family: 'Arial Black', sans-serif; 
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    text-shadow: 0px 0px 20px rgba(0, 210, 255, 0.6); 
+}
+.join-btn {
+    background-color: #00d2ff;
+    color: #000;
+    border: none;
+    padding: 18px 50px;
+    font-size: 18px;
+    font-weight: 900;
+    cursor: pointer;
+    border-radius: 50px; 
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(0, 210, 255, 0.4);
+}
+.join-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0, 210, 255, 0.8);
+    background-color: #fff;
+}
+
+.mainDiv {
+    display: flex;
+    padding: 80px 10%;
+    align-items: center;
+}
+
+.main-img { width: 50%; }
+.main-img img { width: 100%; border-radius: 10px; }
+.main-text { width: 50%; padding-left: 50px; }
+.main-text h2 { color: #00d2ff; font-size: 40px; }
+
+.go-btn {
+    background: none;
+    border: 2px solid #00d2ff;
+    color: #00d2ff;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+.MainDiv-games {
+    padding: 50px 10%;
+    background-color: #05111d;
+    text-align: center;
+}
+
+.game-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.game-card {
+    background-color: #0a1929;
+    width: 280px; 
+    padding: 10px;
+    border: 1px solid #1a2a3a;
+    cursor: pointer;
+}
+
+.game-card img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 5px;
+}
+
+.game-card h4 {
+    margin-top: 15px;
+}
+
+.footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #000;
+}
+
+.game-card:hover {
+    transform: translateY(-10px); /* Lifts the card up */
+    border-color: #00d2ff; /* Glows the border */
+    box-shadow: 0 10px 30px rgba(0, 210, 255, 0.3); /* Soft cyan shadow */
+}
